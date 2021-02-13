@@ -1,0 +1,1187 @@
+body{
+    background-color: rgba(175, 41, 52, 0.384);}
+.main{
+    
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   color:white;
+   display: inline-block;
+   
+   border-radius: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgba(0, 55, 128, 0.712);
+    
+}
+.education{ 
+   
+    background-color:white;
+    padding-bottom: 250px;
+    display: flex;
+    margin-left: 350px;
+    margin-right: 350px;
+    margin-top: 20px;
+}
+.education h3{
+    margin-left: 20px;
+}
+.experience {
+    display: flex;
+    background-color:white;
+    padding-bottom: 250px;
+    margin-left: 350px;
+    margin-right: 350px;
+
+}
+.experience h3{
+    margin-left: 20px;
+}
+.certification {
+    display: flex;
+    background-color:white;
+    padding-bottom: 250px;
+    margin-left: 350px;
+    margin-right: 350px;
+}
+.certification h3{
+    margin-left: 20px;
+}
+.project {
+    display: flex;
+    background-color:white;
+    padding-bottom: 250px;
+    margin-left: 350px;
+    margin-right: 350px;
+}
+.project h3{
+    margin-left: 20px;
+}
+.volunteer {
+    display: flex;
+    background-color:white;
+    padding-bottom: 300px;
+    margin-left: 350px;
+    margin-right: 350px;
+}
+.volunteer h3{
+    margin-left: 20px;
+}
+.contact {
+    display: flex;
+    background-color:rgba(105, 105, 156, 0.479);
+    
+    margin-left: 350px;
+    margin-right: 350px;
+}
+.contact h3{
+    margin-left: 20px;
+}
+#education-plus{
+    margin-left:650px;
+    cursor: pointer;
+}
+#experience-plus{
+    margin-left:650px;
+    cursor: pointer;
+}
+#certify-plus{
+    margin-top: 0px;
+    margin-left:730px;
+    cursor: pointer;
+}
+#project-plus{
+    margin-left:670px;
+    cursor: pointer;
+}
+#volunteer-plus{
+    margin-left:710px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+#contact-plus{
+    margin-left:650px;
+    cursor: pointer;
+}
+
+.education-model{
+    width:100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    top:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display:none;
+    
+}
+.education-model-box{
+    width: 600px;
+    height: 600px;
+    background-color:white;
+    border-radius: 4px;
+    text-align:center;
+    padding:20px;
+
+    
+}
+
+.close{
+    position: relative;
+    top:0;
+    left:260px;
+    font-size:42px;
+    transform:rotate(45deg);
+    cursor: pointer;
+    
+}
+.education-model-box p{
+    display: block;
+    background-color: rgba(0, 128, 0, 0.623);
+    margin-left: 50px;
+    margin-right: 50px;
+    color:white;
+    font-size: 24px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+#education-title{
+    border-radius:5px;
+    width:400px;
+    height:30px;
+}
+#education-title:hover{
+    background-color:rgba(77, 77, 212, 0.075) ;
+}
+#specialization-title{
+    border-radius:5px;
+    width:400px;
+    height:30px;
+    margin-top: 10px;
+}
+#specialization-title:hover{
+    background-color:rgba(77, 77, 212, 0.075) ;
+}
+#college-title{
+    border-radius:5px;
+    width:400px;
+    height:30px;
+    margin-top: 20px;
+}
+#college-title:hover{
+    background-color:rgba(77, 77, 212, 0.075) ;
+}
+#endedumonths{
+    margin-bottom: 8px;
+    width:200px;
+    height:30px;
+}
+#endeduyears{
+    margin-bottom: 8px;
+    width:200px;
+    height:30px;
+}
+.education-model h5{
+    display: flex;
+    margin-left: 100px;
+}
+
+#endedumonths:hover{
+    background-color:rgba(77, 77, 212, 0.075) ;
+}
+#endeduyears:hover{
+    background-color:rgba(77, 77, 212, 0.075) ;
+}
+#edumonths{
+    
+    width:200px;
+    height:30px;
+}
+.end h5{
+    margin-top: 5px;
+    display: flex;
+   
+    margin-left:100px;
+}
+#cgpa{
+    border-radius:5px;
+    border-color: rgb(7, 7, 94);
+    margin-top: 20px;
+    margin-right: 90px;
+   width:120px;
+   height:30px; 
+}
+#cgpa:hover{
+    background-color:rgba(77, 77, 212, 0.075) ;
+}
+#cgpa-place{
+    border-radius:5px;
+    border-color: rgb(7, 7, 94);
+    height: 30px;
+}
+#cgpa-place:hover{
+    background-color:rgba(77, 77, 212, 0.075) ;
+}
+#save{
+    border-radius:5px;
+    border-color: brown;
+    margin-top: 50px;
+    width:100px;
+    height: 35px;
+    background-color: rgba(0, 128, 0, 0.767);
+    color:white;
+    font-size: 18px;
+}
+form{
+    align-items: center;
+    display: block;
+}
+
+/*Experience Model*/
+
+.experience-model{
+    width:100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    top:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display:none;
+    
+}
+.experience-model-box{
+    width: 650px;
+    height: 690px;
+    background-color:white;
+    border-radius: 4px;
+    text-align:center;
+    padding:20px;
+}
+.expclose{
+    position: relative;
+    top:0;
+    left:260px;
+    font-size:42px;
+    transform:rotate(45deg);
+    cursor: pointer;
+    
+}
+.experience-model-box p{
+    display: block;
+    background-color: rgba(0, 128, 0, 0.623);
+    margin-top: 5px;
+    margin-left: 50px;
+    margin-right: 50px;
+    color:white;
+    font-size: 24px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#exp-title{
+    border-radius:5px;
+    width:450px;
+    height:30px;
+}
+#exp-title:hover{
+    background-color:rgba(77, 77, 212, 0.075) ;
+}
+
+#comp-title{
+    border-radius:5px;
+    margin-top:20px;
+    width:450px;
+    height:30px;
+}
+#comp-title:hover{
+    background-color:rgba(77, 77, 212, 0.075) ;
+}
+#emp-title{
+    border-radius:5px;
+    margin-top:20px;
+    width:450px;
+    height:30px;
+}
+#emp-title:hover{
+    background-color:rgba(77, 77, 212, 0.075) ;
+}
+.experience-model h5{
+    display: flex;
+    margin-left: 100px;
+}
+
+#expmonths{
+    
+    width:200px;
+    height:30px;
+    margin-right: 25px;
+}
+#endexpmonths{
+    margin-right: 25px;
+    margin-bottom: 8px;
+    width:200px;
+    height:30px;
+}
+
+#expmonths:hover{
+    background-color:rgba(77, 77, 212, 0.075) ;
+}
+#endexpyears:hover{
+    background-color:rgba(77, 77, 212, 0.075) ;
+}
+#text-area{
+    margin-top:5px;
+    width:450px;
+    height:100px;
+}
+#upload{
+    margin-top: 10px;
+}
+#linktab1{
+    margin-right:150px ;
+    background-color:white;
+    color:indigo;
+    border-radius:25px;
+    border-color: indigo;
+    margin-top: 20px;
+    width:200px;
+    height:30px;
+    font-size: 16px;
+}
+#linktab1:hover{
+    border-color: indigo;
+    background-color: rgba(137, 43, 226, 0.322);
+}
+#link{
+    margin-top: 10px;
+    padding-left:35px;
+    padding-right:35px;
+    display:none;
+}
+#address{
+    border-color: rgb(13, 13, 32);
+    width:500px;
+    height:20px;
+}
+input[type="submit"] {
+    margin-left: -50px;
+    height: 25px;
+    width: 50px;
+    background: blue;
+    color: white;
+    border: 0;
+-webkit-appearance: none;
+}
+.save_link{
+    margin-bottom:20px;
+    
+}
+.expsave{
+    border-radius:5px;
+    border-color: brown;
+    width:100px;
+    height: 35px;
+    background-color: rgba(0, 128, 0, 0.767);
+    color:white;
+    font-size: 18px;
+}
+#expsave:hover{
+    background-color: rgba(0, 128, 0, 0.473);
+}
+
+/*Certifications*/
+
+.certify-model{
+    width:100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    top:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display:none;
+}
+.certify-model-box{
+    width: 600px;
+    height: 650px;
+    background-color:white;
+    border-radius: 4px;
+    text-align:center;
+    padding:20px;
+}
+.certifyclose{
+    position: relative;
+    top:0;
+    left:260px;
+    font-size:42px;
+    transform:rotate(45deg);
+    cursor: pointer;
+}
+.certify-model-box p{
+    display: block;
+    background-color: rgba(0, 128, 0, 0.623);
+    margin-left: 50px;
+    margin-right: 50px;
+    color:white;
+    font-size: 24px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#certify-title{
+    border-radius:5px;
+    width:500px;
+    height:30px;
+}
+#certify-title:hover{
+    background-color:rgba(77, 77, 212, 0.075) ;
+}
+#org-title{
+    border-radius:5px;
+    margin-top:20px;
+    width:500px;
+    height:30px;
+}
+#org-title:hover{
+    background-color:rgba(77, 77, 212, 0.075) ;
+}
+input[type=checkbox]{
+    width:25px;
+    height: 25px;
+}
+.cermonths{
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 200px; /* Should be removed. Only for demonstration */
+}
+ 
+/* Clear floats after the columns */
+
+.certify-calender:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+#cermonths{
+    margin-top: 10px;
+    width:200px;
+    height:30px;
+}
+#ceryears{
+    margin-top: 15px;
+    width:200px;
+    height:30px;
+    
+}
+
+#cermonths:hover{
+    background-color:rgba(77, 77, 212, 0.075) ;
+}
+#cred-title{
+    margin-left: 15px;
+    width:500px;
+    height:30px;
+    border-radius:5px;
+}
+#cred-title:hover{
+    background-color:rgba(77, 77, 212, 0.075) ;
+}
+.cert-end{
+    padding-top: 25px;
+}
+.certsave{
+    border-radius:5px;
+    border-color: brown;
+    width:100px;
+    height: 35px;
+    background-color: rgba(0, 128, 0, 0.767);
+    color:white;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+
+/*Project*/
+
+.project-model{
+    width:100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    top:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display:none;
+    
+}
+.project-model-box{
+    width: 600px;
+    height: 680px;
+    background-color:white;
+    border-radius: 4px;
+    text-align:center;
+    padding:20px;
+}
+.projectclose{
+    position: relative;
+    margin-top:5px;
+    top:0;
+    left:260px;
+    font-size:42px;
+    transform:rotate(45deg);
+    cursor: pointer;
+    
+}
+.project-model-box p{
+    margin-top:10px;
+    margin-bottom: 30px;
+    display: block;
+    background-color: rgba(0, 128, 0, 0.623);
+    margin-left: 50px;
+    margin-right: 50px;
+    color:white;
+    font-size: 24px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.project-model h5{
+    display: flex;
+    margin-left: 100px;
+}
+#promonths{
+    
+    width:200px;
+    height:30px;
+}
+#endpromonths{
+    margin-bottom: 8px;
+    width:200px;
+    height:30px;
+}
+#endproyears{
+    margin-bottom: 8px;
+    width:200px;
+    height:30px;
+}
+
+
+#project-title{
+    border-radius:5px;
+    width:400px;
+    height:30px;
+}
+#project-title:hover{
+    background-color:rgba(77, 77, 212, 0.075) ;
+}
+input[type=checkbox]{
+    width:25px;
+    height: 25px;
+}
+.pro-checkbox{
+    margin-top: 20px;
+    margin-right:40px;
+    margin-left:10px;
+    font-family: cursive;
+}
+
+#pro-cred{
+    margin-top:5px;
+    width:400px;
+    height:30px;
+    border-radius:5px;
+}
+#pro-cred:hover{
+    background-color:rgba(77, 77, 212, 0.075) ;
+}
+#protext-area{
+    margin-top: 10px;
+    width:400px;
+    height:100px;
+}
+.prodescription{
+    margin-top: 10px;
+}
+
+/*Volunteer*/
+
+.volunteer-model{
+    width:100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    top:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display:none;
+}
+.volunteer-model-box{
+    width: 600px;
+    height: 650px;
+    background-color:white;
+    border-radius: 4px;
+    text-align:center;
+    padding:20px;
+}
+.volclose{
+    position: relative;
+    top:0;
+    left:260px;
+    font-size:42px;
+    transform:rotate(45deg);
+    cursor: pointer;
+}
+.volunteer-model-box p{
+    display: block;
+    background-color: rgba(0, 128, 0, 0.623);
+    margin-left: 50px;
+    margin-right: 50px;
+    color:white;
+    font-size: 24px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#vol-title{
+    border-radius:5px;
+    width:500px;
+    height:30px;
+}
+#vol-title:hover{
+    background-color:rgba(77, 77, 212, 0.075) ;
+}
+#volorg-title{
+    border-radius:5px;
+    margin-top:20px;
+    width:500px;
+    height:30px;
+}
+#volorg-title:hover{
+    background-color:rgba(77, 77, 212, 0.075) ;
+}
+#endvolmonths{
+    margin-bottom: 8px;
+    width:200px;
+    height:30px;
+    margin-right:45px;
+    
+}
+#endvolyears{
+    margin-bottom: 8px;
+    margin-left: 45px;
+    width:200px;
+    height:30px;
+}
+#volmonths{
+    margin-right:50px;
+    width:200px;
+    height:30px;
+}
+#volyears{
+    margin-left:45px;
+    width:200px;
+    height:30px;
+}
+
+.volend h5{
+        margin-top: 7px;
+        display: flex;
+        margin-left:50px;
+    }
+#voltext-area{
+        margin-top:5px;
+        width:500px;
+        height:100px;
+    }
+
+    #link2{
+        margin-top: 10px;
+        padding-left:35px;
+        padding-right:35px;
+        display:none;
+    }
+    #voladdress{
+        border-color: rgb(13, 13, 32);
+        width:500px;
+        height:20px;
+    }
+    input[type="submit"] {
+        margin-left: -50px;
+        height: 25px;
+        width: 50px;
+        background: blue;
+        color: white;
+        border: 0;
+    -webkit-appearance: none;
+    }
+    #linktab2{
+        margin-right:150px ;
+        background-color:white;
+        color:rgb(56, 13, 7);
+        border-radius:25px;
+        border-color: rgb(114, 34, 9);
+        margin-top: 20px;
+        width:200px;
+        height:30px;
+        font-size: 16px;
+    }
+    #linktab2:hover{
+        border-color: rgba(114, 34, 9, 0.959);
+        background-color: rgba(226, 70, 43, 0.322);
+    }
+
+/*Contact*/
+
+.contact-model{
+    width:100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    top:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display:none;
+    
+}
+.contact-model-box{
+    width: 600px;
+    height: 600px;
+    background-color:white;
+    border-radius: 4px;
+    text-align:center;
+    padding:20px;
+}
+.contclose{
+    position: relative;
+    top:0;
+    left:260px;
+    font-size:42px;
+    transform:rotate(45deg);
+    cursor: pointer;
+}
+.contact-model-box p{
+    display: block;
+    background-color: rgba(0, 128, 0, 0.623);
+    margin-left: 50px;
+    margin-right: 50px;
+    color:white;
+    font-size: 24px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#website-title{
+    border-radius:5px;
+    width:400px;
+    height:30px;
+}
+#website-title:hover{
+    background-color:rgba(77, 77, 212, 0.075) ;
+}
+#email-title{
+    border-radius:5px;
+    width:400px;
+    height:30px;
+    margin-top: 10px;
+}
+#email-title:hover{
+    background-color:rgba(77, 77, 212, 0.075) ;
+}
+#phno-title{
+    border-radius:5px;
+    width:400px;
+    height:30px;
+    margin-top: 20px;
+}
+#phno-title:hover{
+    background-color:rgba(77, 77, 212, 0.075) ;
+}
+#address-title{
+    border-radius:5px;
+    width:400px;
+    height:30px;
+    margin-top: 20px;
+}
+#address-title:hover{
+    background-color:rgba(77, 77, 212, 0.075) ;
+}
+.contact-model h5{
+    display: flex;
+    margin-left: 100px;
+}
+
+
+#save{
+    border-radius:5px;
+    border-color: brown;
+    margin-top: 50px;
+    width:100px;
+    height: 35px;
+    background-color: rgba(0, 128, 0, 0.767);
+    color:white;
+    font-size: 18px;
+}
+form{
+    align-items: center;
+    display: block;
+}
+.contact-model input[type=text] {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #000000;
+}
+
+
+
+#save{
+    cursor: pointer;
+}
+
+
+
+.education ul li{
+    display: block;
+       width:720px;
+       height:200px;
+       background-color:rgba(177, 123, 58, 0.527);
+       color:white;
+       margin-right: 10px;
+    
+    }
+.insertedutitle{
+        color:white;
+       
+        display: inline-block;
+        margin: 10px;
+        
+}
+.insertedujoinmonth{
+        font-style: italic;
+        display: inline-block;
+        margin-left:350px;
+        color:white;
+    
+    }
+.insertedujoinyear{
+        font-style: italic;
+        color:white;
+        display: inline-block;
+        margin-right:5px;
+    }
+    
+.inserteduendmonth{
+        font-style: italic;
+        display: inline-block;
+       
+        color:white;
+    }
+.inserteduendyear{
+        font-style: italic;
+        color:white;
+        display: inline-block;
+        margin-right:5px;
+    }
+.inserteduspectitle{
+        margin-left: 10px;
+        display: inline-block;
+    }
+.inserteducollegetitle{
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+.insertcgpaselect{
+        display: inline-block;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+.insertcgpaname{
+        display: inline-block;
+        margin-left: 20px;
+       
+    
+    }
+.delete i{
+  margin-left: 100px;
+}
+
+
+.experience ul li{
+        display: block;
+           width:720px;
+           height:250px;
+           background-color:rgba(137, 98, 201, 0.507);
+           color:white;
+        
+        }
+.insertexptitle{
+        color:white;
+        padding-top: 10px;
+        display: inline-block;
+        margin: 10px; 
+        font-size: 18px;
+    }
+.insertexpjoinmonth{
+        font-style: italic;
+        display: inline-block;
+        margin-left: 300px;
+        color:white;
+    }
+.insertexpjoinyear{
+        font-style: italic;
+        color:white;
+        display: inline-block;
+        margin-right:5px;
+    }
+    
+.insertexpendmonth{
+        font-style: italic;
+        display: inline-block;
+       
+        color:white;
+    }
+.insertexpendyear{
+        font-style: italic;
+        color:white;
+        display: inline-block;
+        margin-right:5px;
+    }
+    
+.insertexpcomptitle{
+        
+        margin-left: 10px;
+        margin-top: 10px;
+        font-style: oblique;
+    }
+.insertexpemptitle{
+        margin-top: 10px;
+        margin-left: 10px;
+        font-style: oblique;
+}
+    
+.insertexpdescription{
+        margin-left: 10px;
+        margin-right: 30px;
+        margin-top: 10px;
+        
+    }
+.insertexpdrivelink{
+        margin-left: 10px;
+        margin-top: 10px;
+        font-size: 17px;
+}
+    
+.experience a{
+    text-decoration: none;
+    color:crimson;
+}
+
+.certification ul li{
+    display: block;
+       width:720px;
+       height:150px;
+       background-color:rgba(141, 112, 73, 0.726);
+       color:white;
+    
+    }
+.insertcerttitle{
+    color:white;
+    padding-top: 10px;
+   
+    margin: 10px; 
+    font-size: 18px;
+}
+.insertcertjoinmonth{
+    font-style: italic;
+   margin-left: 10px;
+    color:white;
+}
+.insertcertjoinyear{
+    font-style: italic;
+    color:white;
+   
+}
+
+.insertcertendmonth{
+    font-style: italic;
+   
+   
+    color:white;
+}
+.insertcertendyear{
+    font-style: italic;
+    color:white;
+ 
+}
+.insertcerturl{
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 17px;
+}
+.insertcertorg{
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 17px;
+}
+.certification a{
+    text-decoration: none;
+    color:maroon;
+}
+.project ul li{
+    display: block;
+       width:720px;
+       height:250px;
+       background-color:rgba(19, 14, 48, 0.726);
+       color:white;
+    
+    }
+.insertprotitle{
+    color:white;
+    padding-top: 10px;
+   
+    margin: 10px;
+    margin-left: 20px; 
+    font-size: 18px;
+}
+.insertprojoinmonth{
+    font-style: italic;
+   margin-left: 20px;
+    color:white;
+}
+.insertprojoinyear{
+    font-style: italic;
+    color:white;
+   
+}
+
+.insertproendmonth{
+    font-style: italic;
+   
+   
+    color:white;
+}
+.insertproendyear{
+    font-style: italic;
+    color:white;
+ 
+}
+.insertprourl{
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 17px;
+}
+.insertprodescription{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    font-size: 17px;
+}
+.project a{
+    text-decoration: none;
+    color:rgb(231, 219, 219);
+}
+
+.volunteer ul li{
+    display: block;
+       width:720px;
+       height:250px;
+       background-color:rgba(63, 172, 112, 0.726);
+       color:white;
+    
+    }
+.insertvoltitle{
+    color:white;
+    padding-top: 10px;
+   
+    margin: 10px;
+    margin-left: 20px; 
+    font-size: 18px;
+}
+.insertvolorgtitle{
+    color:white;
+    padding-top: 10px;
+   
+    margin: 10px;
+    margin-left: 20px; 
+    font-size: 17px;
+}
+.insertvoljoinmonth{
+    font-style: italic;
+   margin-left: 20px;
+    color:white;
+}
+.insertvoljoinyear{
+    font-style: italic;
+    color:white;
+   
+}
+.insertvolendmonth{
+    font-style: italic;
+   
+   
+    color:white;
+}
+.insertvolendyear{
+    font-style: italic;
+    color:white;
+ 
+}
+.insertvolurl{
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 17px;
+}
+.insertvoldescription{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    font-size: 17px;
+}
+.volunteer a{
+    text-decoration: none;
+    color:rgb(112, 36, 36);
+}
+.insertwebtitle{
+    color:white;
+    text-align: center;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.insertemailtitle{
+    color:white;
+    text-align: center;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.insertphno{
+    color:white;
+    text-align: center;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.insertadress{
+    color:white;
+    text-align: center;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.contact ul li{
+    background-color: aqua;
+    display: block;
+    width:720px;
+    height:250px;
+    background-color:rgba(215, 203, 235, 0.89);
+    color:rgba(128, 0, 0, 0.493);
+}
+
+
+.logout{
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgba(0, 55, 128, 0.712);
+    color:white;
+    border-radius: 5px;
+    display: inline-block;
+    padding-top:5px;
+    padding-bottom: 5px;
+    margin-left: 800px;
+}
+.logout a{
+    text-decoration: none;
+    color:white;
+}

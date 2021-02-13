@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="{{ url_for('static', filename='usersprofile.css') }}" rel="stylesheet">
+       
+       
+        
+       
+        
+        
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Students Corner</title>
+    </head>
+    <body>
+        <div class="main">
+           <h2> <b>Ashwin@515 </b>achievement board !</h2></div>
+           
+        <div class="education">
+          <div><h3>Education</h3>
+        
+            <ul class="edulist">
+                
+                
+               {% for row in educationlist %}
+                    <li class="list-group-item">
+                    <div class="insertedutitle">{{row.educationtitle}}</div>
+                    <div class="insertedujoinmonth">{{row.edujoinmonth}}</div> 
+                    <div class="insertedujoinyear">{{row.edujoinyears}}</div> -
+                    <div class="inserteduendmonth">{{row.eduendmonth}}</div>
+                    <div class="inserteduendyear">{{row.eduendyear}}</div>
+                    <div class="inserteduspectitle">Specialization - {{row.specializationtitle}}</div>
+                    
+                    <div class="inserteducollegetitle">Institute - {{row.collegetitle}}</div>
+                    <div class="insertcgpaselect">{{row.cgpaselect}}</div>  -
+                    <div class="insertcgpaname">{{row.cgpaname}}</div>
+                    
+                </li><br>
+
+                {% endfor %} 
+                </ul>
+              
+               
+                </div>
+               
+            </div>
+        
+    <br>
+
+
+
+
+
+
+
+
+
+
+        <div class="experience">
+          <div> <h3>Experience</h3>
+            <ul>
+                {% for rows in experiencelist %}
+                     <li class="exp-group-item">
+                     <div class="insertexptitle">{{rows.exptitle}}</div>
+                     <div class="insertexpjoinmonth">{{rows.expjoinmonth}}</div> 
+                     <div class="insertexpjoinyear">{{rows.expjoinyear}}</div> -
+                     <div class="insertexpendmonth">{{rows.expendmonth}}</div>
+                     <div class="insertexpendyear">{{rows.expendyear}}</div>
+                     <div class="insertexpcomptitle">{{rows.comptitle}}</div>
+                     <div class="insertexpemptitle">{{rows.emptitle}}</div>
+                     <div class="insertexpdescription">{{rows.expdescription}}</div>
+                     <div class="insertexpdrivelink"><a href="{{rows.expdrivelink}}" target="_blank">See Credential</a></div>
+                    
+                 </li><br>
+ 
+                 {% endfor %} 
+                 </ul></div>
+               
+                
+                 </div>
+            
+
+
+
+        <br>
+        <div class="certification">
+          <div><h3>Certifications</h3>
+          <ul>
+            {% for certificate in certificatelist %}
+                 <li class="exp-group-item">
+                 <div class="insertcerttitle">{{ certificate.certifytitle}}</div>
+                 <div class="insertcertjoinmonth">{{ certificate.certjoinmonth}} {{ certificate.certjoinyear}} - {{ certificate.certendmonth}} {{ certificate.certendyear}}</div> 
+                 <div class="insertcertjoinyear"></div> 
+                 <div class="insertcertendmonth"></div>
+                 <div class="insertcertendyear"></div>
+                 <div class="insertcertorg">{{ certificate.certorgtitle}}</div>
+                 
+                
+                 <div class="insertcerturl"><a href="{{certificate.certurl}}" target="_blank">See Credential</a></div>
+                 
+             </li><br>
+
+             {% endfor %} 
+             </ul></div>
+        </div><br>
+        <div class="project">
+          <div><h3>Project</h3>
+            <ul>
+                {% for project in projectlist %}
+                     <li class="exp-group-item">
+                     <div class="insertprotitle">{{project.protitle}}</div>
+                     <div class="insertprojoinmonth">{{ project.prostartmonth}} {{ project.prostartyear}} - {{ project.proendmonth}} {{project.proendyear}}</div> 
+                     <div class="insertprojoinyear"></div> 
+                     <div class="insertproendmonth"></div>
+                     <div class="insertproendyear"></div>
+                    <div class="insertprodescription">{{project.prodescription}}</div>
+                    <div class="insertprourl"><a href="{{project.prourl}}" target="_blank">See Project</a></div>
+                    
+                 </li><br>
+    
+                 {% endfor %} 
+                 </ul></div>
+        </div><br>
+        <div class="volunteer">
+           <div><h3>Volunteer Activities</h3>
+            <ul>
+                {% for vol in volunteerlist %}
+                     <li class="exp-group-item">
+                     <div class="insertvoltitle">{{vol.voltitle}}</div>
+                     <div class="insertvolorgtitle">{{vol.volorgtitle}}</div>
+                     <div class="insertvoljoinmonth">{{ vol.volstartmonth}} {{ vol.volstartyear}} - {{ vol.volendmonth}} {{vol.volendyear}}</div> 
+                     <div class="insertvoljoinyear"></div> 
+                     <div class="insertvolendmonth"></div>
+                     <div class="insertvolendyear"></div>
+                    <div class="insertvoldescription">{{vol.voldescription}}</div>
+                    <div class="insertvolurl"><a href="{{vol.volurl}}" target="_blank">See Docs</a></div>
+                  
+                 </li><br>
+    
+                 {% endfor %} 
+                 </ul></div>
+        </div><br><br>
+
+
+        <div class="contact">
+         <div><h3>Contact</h3>
+          <ul>            
+            {% for con in contactlist %}
+            <li>
+            <div class="insertwebtitle"><i class="fa fa-globe" style="font-size: 20px;margin-left:20px;margin-top: 20px; color:maroon;"></i>   {{con.website}}</div>
+            <div class="insertemailtitle"><i class="fa fa-envelope"style="font-size: 20px;margin-left: 20px;margin-top: 20px;color:green;"></i>&nbsp;&nbsp;{{con.emailtitle}}</div>
+            <div class="insertphno"><i class="fa fa-phone" style="font-size: 20px;margin-left:20px;margin-top: 20px;color:rgb(6, 4, 22);"></i>&nbsp;&nbsp;{{ con.phno}}</div> 
+            <div class="insertadress"><i class="fa fa-map" style="font-size: 20px;margin-left: 20px;margin-top: 20px;color:rgb(219, 31, 31);"></i>&nbsp;&nbsp;{{ con.addresstitle}}</div> 
+           
+           </li>
+        
+
+        {% endfor %} 
+      </ul></div>
+        </div>
+
+                </body>
+</html>

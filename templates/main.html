@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="{{ url_for('static', filename='main.css') }}" rel="stylesheet">
+        <script  src="{{url_for('static', filename='main.js')}}" ></script>
+        
+        
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Students Corner</title>
+    </head>
+    <body>
+        <div class="main">
+           <h2>Welcome  {{session.username }} to your achievement board !</h2></div>
+           <div class="logout"><a href={{ url_for('logout') }}>Signout</a></div>
+        <div class="education">
+          <div><h3>Education<i id="education-plus" onclick="educationplus()" class="fa fa-plus"></i></h3>
+        
+            <ul class="edulist">
+                
+                
+               {% for row in educationlist %}
+                    <li class="list-group-item">
+                    <div class="insertedutitle">{{row.educationtitle}}</div>
+                    <div class="insertedujoinmonth">{{row.edujoinmonth}}</div> 
+                    <div class="insertedujoinyear">{{row.edujoinyears}}</div> -
+                    <div class="inserteduendmonth">{{row.eduendmonth}}</div>
+                    <div class="inserteduendyear">{{row.eduendyear}}</div>
+                    <div class="inserteduspectitle">Specialization - {{row.specializationtitle}}</div>
+                    
+                    <div class="inserteducollegetitle">Institute - {{row.collegetitle}}</div>
+                    <div class="insertcgpaselect">{{row.cgpaselect}}</div>  -
+                    <div class="insertcgpaname">{{row.cgpaname}}</div>
+                    <div class="delete">
+                        <a href="{{url_for('delete')}}">
+                          <i class="fa fa-trash" style="font-size:18px;color:white;margin-left: 660px;margin-top:30px;"></i>
+                        </a>
+                    </div>
+                </li><br>
+
+                {% endfor %} 
+                </ul>
+              
+               
+                </div>
+               
+            </div>
+        
+    <br>
+
+
+
+
+
+
+
+
+
+
+        <div class="experience">
+          <div> <h3>Experience<i id="experience-plus" onclick="expplus()" class="fa fa-plus"></i></h3>
+            <ul>
+                {% for rows in experiencelist %}
+                     <li class="exp-group-item">
+                     <div class="insertexptitle">{{rows.exptitle}}</div>
+                     <div class="insertexpjoinmonth">{{rows.expjoinmonth}}</div> 
+                     <div class="insertexpjoinyear">{{rows.expjoinyear}}</div> -
+                     <div class="insertexpendmonth">{{rows.expendmonth}}</div>
+                     <div class="insertexpendyear">{{rows.expendyear}}</div>
+                     <div class="insertexpcomptitle">{{rows.comptitle}}</div>
+                     <div class="insertexpemptitle">{{rows.emptitle}}</div>
+                     <div class="insertexpdescription">{{rows.expdescription}}</div>
+                     <div class="insertexpdrivelink"><a href="{{rows.expdrivelink}}" target="_blank">See Credential</a></div>
+                     <div class="delete">
+                         <a href="{{url_for('deleteexp')}}">
+                           <i class="fa fa-trash" style="font-size:18px;color:white;margin-left: 660px;margin-bottom:40px;"></i>
+                         </a>
+                     </div>
+                 </li><br>
+ 
+                 {% endfor %} 
+                 </ul></div>
+               
+                
+                 </div>
+            
+
+
+
+        <br>
+        <div class="certification">
+          <div><h3>Certifications<i id="certify-plus" onclick="certifyplus()" class="fa fa-plus"></i></h3>
+          <ul>
+            {% for certificate in certificatelist %}
+                 <li class="exp-group-item">
+                 <div class="insertcerttitle">{{ certificate.certifytitle}}</div>
+                 <div class="insertcertjoinmonth">{{ certificate.certjoinmonth}} {{ certificate.certjoinyear}} - {{ certificate.certendmonth}} {{ certificate.certendyear}}</div> 
+                 <div class="insertcertjoinyear"></div> 
+                 <div class="insertcertendmonth"></div>
+                 <div class="insertcertendyear"></div>
+                 <div class="insertcertorg">{{ certificate.certorgtitle}}</div>
+                 
+                
+                 <div class="insertcerturl"><a href="{{certificate.certurl}}" target="_blank">See Credential</a></div>
+                 <div class="delete">
+                     <a href="{{url_for('deletecertify')}}">
+                       <i class="fa fa-trash" style="font-size:18px;color:white;margin-left: 660px;margin-bottom:40px;"></i>
+                     </a>
+                 </div>
+             </li><br>
+
+             {% endfor %} 
+             </ul></div>
+        </div><br>
+        <div class="project">
+          <div><h3>Project<i id="project-plus" onclick="projectplus()" class="fa fa-plus"></i></h3>
+            <ul>
+                {% for project in projectlist %}
+                     <li class="exp-group-item">
+                     <div class="insertprotitle">{{project.protitle}}</div>
+                     <div class="insertprojoinmonth">{{ project.prostartmonth}} {{ project.prostartyear}} - {{ project.proendmonth}} {{project.proendyear}}</div> 
+                     <div class="insertprojoinyear"></div> 
+                     <div class="insertproendmonth"></div>
+                     <div class="insertproendyear"></div>
+                    <div class="insertprodescription">{{project.prodescription}}</div>
+                    <div class="insertprourl"><a href="{{project.prourl}}" target="_blank">See Project</a></div>
+                    <div class="delete">
+                         <a href="{{url_for('deleteproject')}}">
+                           <i class="fa fa-trash" style="font-size:18px;color:white;margin-left: 660px;margin-bottom:40px;"></i>
+                         </a>
+                     </div>
+                 </li><br>
+    
+                 {% endfor %} 
+                 </ul></div>
+        </div><br>
+        <div class="volunteer">
+           <div><h3>Volunteer Activities<i id="volunteer-plus" onclick="volunteerplus()" class="fa fa-plus"></i></h3>
+            <ul>
+                {% for vol in volunteerlist %}
+                     <li class="exp-group-item">
+                     <div class="insertvoltitle">{{vol.voltitle}}</div>
+                     <div class="insertvolorgtitle">{{vol.volorgtitle}}</div>
+                     <div class="insertvoljoinmonth">{{ vol.volstartmonth}} {{ vol.volstartyear}} - {{ vol.volendmonth}} {{vol.volendyear}}</div> 
+                     <div class="insertvoljoinyear"></div> 
+                     <div class="insertvolendmonth"></div>
+                     <div class="insertvolendyear"></div>
+                    <div class="insertvoldescription">{{vol.voldescription}}</div>
+                    <div class="insertvolurl"><a href="{{vol.volurl}}" target="_blank">See Docs</a></div>
+                    <div class="delete">
+                         <a href="{{url_for('deletevolunteer')}}">
+                           <i class="fa fa-trash" style="font-size:18px;color:white;margin-left: 660px;margin-bottom:40px;"></i>
+                         </a>
+                     </div>
+                 </li><br>
+    
+                 {% endfor %} 
+                 </ul></div>
+        </div><br><br>
+
+
+        <div class="contact">
+         <div><h3>Contact<i id="contact-plus" onclick="contactplus()" class="fa fa-plus"></i></h3>
+          <ul>            
+            {% for con in contactlist %}
+            <li>
+            <div class="insertwebtitle"><i class="fa fa-globe" style="font-size: 20px;margin-left:20px;margin-top: 20px; color:maroon;"></i>   {{con.website}}</div>
+            <div class="insertemailtitle"><i class="fa fa-envelope"style="font-size: 20px;margin-left: 20px;margin-top: 20px;color:green;"></i>&nbsp;&nbsp;{{con.emailtitle}}</div>
+            <div class="insertphno"><i class="fa fa-phone" style="font-size: 20px;margin-left:20px;margin-top: 20px;color:rgb(6, 4, 22);"></i>&nbsp;&nbsp;{{ con.phno}}</div> 
+            <div class="insertadress"><i class="fa fa-map" style="font-size: 20px;margin-left: 20px;margin-top: 20px;color:rgb(219, 31, 31);"></i>&nbsp;&nbsp;{{ con.addresstitle}}</div> 
+           
+           <div class="delete">
+                <a href="{{url_for('deletecontact')}}">
+                  <i class="fa fa-trash" style="font-size:18px;color:white;margin-left:660px;margin-top: 50px;"></i>
+                </a>
+            </div>
+           </li>
+        
+
+        {% endfor %} 
+      </ul></div>
+        </div>
+
+        <!--Education Model-->
+
+        <div class="education-model">
+            <div class="education-model-box">
+                <div class="close" onclick="closing()">+</div>
+                <p>Add&nbsp;&nbsp;Education</p>
+                <form id="contact-form" method="post" action="/education">
+                   
+
+                    <input id="education-title" type="text" name="educationtitle" placeholder="Education Title" required><br>
+                  <input id="specialization-title" type="text" name="specializationtitle" placeholder="Specialization" ><br>
+                    <h5>From</h5>
+                            <div class="calender"><select id="edumonths" name="edujoinmonth"><option>January</option><option>Febuary</option>
+                                          <option>March</option><option>April</option>
+                                          <option>May</option><option>June</option>
+                                          <option>July</option><option>August</option>
+                                          <option>September</option><option>October</option>
+                                          <option>November</option><option>December</option>
+                                        
+                                        </select>
+                                        <select id="edumonths" name="edujoinyears"><option>2010</option><option>2011</option>
+                                            <option>2012</option><option>2013</option>
+                                            <option>2014</option><option>2015</option>
+                                            <option>2016</option><option>2017</option>
+                                            <option>2018</option><option>2019</option>
+                                            <option>2020</option><option>2021</option>
+                                        </select>
+                                    </div><br>
+
+                                   <div class="end"> <h5>To</h5></div>
+                            <select id="endedumonths" name="eduendmonth"><option>January</option><option>Febuary</option>
+                                          <option>March</option><option>April</option>
+                                          <option>May</option><option>June</option>
+                                          <option>July</option><option>August</option>
+                                          <option>September</option><option>October</option>
+                                          <option>November</option><option>December</option>
+                                        
+                                        </select>
+                                        <select id="endeduyears" name="eduendyear"><option>2010</option><option>2011</option>
+                                            <option>2012</option><option>2013</option>
+                                            <option>2014</option><option>2015</option>
+                                            <option>2016</option><option>2017</option>
+                                            <option>2018</option><option>2019</option>
+                                            <option>2020</option><option>2021</option>
+                                          
+                                          </select>
+                                    <br>
+                         
+                    <input id="college-title" type="text" name="collegetitle" placeholder="Institution Name"><br>
+                    <select id="cgpa" name="cgpaselect">
+                        <option>CGPA</option>
+                        <option>GRADE</option>
+                        <option>PERCENTAGE</option>
+                    </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="cgpa-place" name="cgpaname"><br>
+                    <div id="add"><input type="submit" id="save"></div>
+                </form>
+                </div></div>
+
+
+                <!--Experience Model-->
+                <div class="experience-model">
+                    <div class="experience-model-box">
+                        <div class="expclose" onclick="expclosing()">+</div>
+                        <p>Add&nbsp;&nbsp;Experience</p>
+                        <form method="post" action="/experience">
+                           
+                            <input id="exp-title" type="text" name="exptitle" placeholder="Experience Title" required ><br>
+                            <input id="comp-title" type="text" name="comptitle" placeholder="Company name" required><br>
+                            <input id="emp-title" type="text" name="emptitle" placeholder="Employment type" required><br>
+                            <h5>From</h5>
+                            <div class="calender"><select id="expmonths" name="expjoinmonth">
+                                         <option>January</option><option>Febuary</option>
+                                          <option>March</option><option>April</option>
+                                          <option>May</option><option>June</option>
+                                          <option>July</option><option>August</option>
+                                          <option>September</option><option>October</option>
+                                          <option>November</option><option>December</option>
+                                        
+                                        </select>
+                                        <select id="expmonths" name="expjoinyear"><option>2010</option><option>2011</option>
+                                            <option>2012</option><option>2013</option>
+                                            <option>2014</option><option>2015</option>
+                                            <option>2016</option><option>2017</option>
+                                            <option>2018</option><option>2019</option>
+                                            <option>2020</option><option>2021</option>
+                                        </select>
+                                    </div><br>
+
+                                   <div class="end"> <h5>To</h5></div>
+                            <select id="endexpmonths" name="expendmonth">
+                                <option>Present</option><option>Febuary</option>
+                                <option>January</option><option>Febuary</option>
+                                          <option>March</option><option>April</option>
+                                          <option>May</option><option>June</option>
+                                          <option>July</option><option>August</option>
+                                          <option>September</option><option>October</option>
+                                          <option>November</option><option>December</option>
+                                        
+                                        </select>
+                                        <select id="endexpmonths" name="expendyear">
+                                            <option></option>
+                                            <option>2010</option><option>2011</option>
+                                            <option>2012</option><option>2013</option>
+                                            <option>2014</option><option>2015</option>
+                                            <option>2016</option><option>2017</option>
+                                            <option>2018</option><option>2019</option>
+                                            <option>2020</option><option>2021</option>
+                                          </select>
+                                    <br>
+                      <textarea id="text-area" rows="4" cols="50" name="expdescription">Description</textarea><br>
+                     <div class="save_link"><button id="linktab1" onclick="linktab()">Link</button><input type="submit" class= "expsave" id="save"></div>
+                     <div id="link"><input type="text" id="address" placeholder="paste the drive link" name="expdrivelink" required></div>
+                    </form>
+                    </div>
+                </div>
+
+                <!--Certifications-->
+                <div class="certify-model">
+                    <div class="certify-model-box">
+                        <div class="certifyclose" onclick="certifyclosing()">+</div>
+                        <p>Certification and Licence</p>
+                        <form action="/certification" method="post">
+                            <input id="certify-title" type="text" name="certifytitle" placeholder="Certification or Licence name" required><br>
+                            <input id="org-title" type="text" name="certorgtitle" placeholder="Issuing organization name" required><br>
+                            <div class="certify-calender">
+                            <div class="cermonths" >
+                                <div class="cert-end"><h5>issued on</h5></div>
+                                <select id="cermonths" name="certjoinmonth"><option>January</option><option>Febuary</option>
+                                          <option>March</option><option>April</option>
+                                          <option>May</option><option>June</option>
+                                          <option>July</option><option>August</option>
+                                          <option>September</option><option>October</option>
+                                          <option>November</option><option>December</option>
+                                        </select><br><br>
+                                        <select id="cermonths" name="certjoinyear"><option>2010</option><option>2011</option>
+                                            <option>2012</option><option>2013</option>
+                                            <option>2014</option><option>2015</option>
+                                            <option>2016</option><option>2017</option>
+                                            <option>2018</option><option>2019</option>
+                                            <option>2020</option><option>2021</option>
+                                        </select>
+                                        </div>
+                                       
+                                   
+                               <div class="ceryears">
+                                <div class="cert-end"><h5>To</h5></div>
+                                <select id="ceryears"name="certendmonth" >
+                                    <option>No expiration</option>
+                                    <option>January</option><option>Febuary</option>
+                                    <option>March</option><option>April</option>
+                                    <option>May</option><option>June</option>
+                                    <option>July</option><option>August</option>
+                                    <option>September</option><option>October</option>
+                                    <option>November</option><option>December</option>
+                                  </select><br><br>
+                                  <select id="ceryears" name="certendyear">
+                                    <option></option>
+                                      <option>2010</option><option>2011</option>
+                                   
+                                    <option>2012</option><option>2013</option>
+                                    <option>2014</option><option>2015</option>
+                                    <option>2016</option><option>2017</option>
+                                    <option>2018</option><option>2019</option>
+                                    <option>2020</option><option>2021</option>
+                                  </select>
+                                <br></div>
+                            </div>
+                            
+                            <input id="cred-title" type="text" name="certurl" placeholder="Crendential URL"><br>
+                            <div class="save" ><input type="submit" id="save"></div>
+                        </form>
+                        </div>
+                </div>
+                
+
+                <!--Projects-->
+                <div class="project-model">
+                    <div class="project-model-box">
+                        <div class="projectclose" onclick="proclosing()">+</div>
+                        <p>Projects</p>
+                        <form action="/project" method="post">
+                            <input id="project-title" type="text" name="protitle" placeholder="Title" required><br>
+                           
+                            <h5>Started from</h5>
+                            <div class="calender"><select id="promonths" name="prostartmonth"><option>January</option><option>Febuary</option>
+                                          <option>March</option><option>April</option>
+                                          <option>May</option><option>June</option>
+                                          <option>July</option><option>August</option>
+                                          <option>September</option><option>October</option>
+                                          <option>November</option><option>December</option>
+                                        
+                                        </select>
+                                        <select id="promonths"name="prostartyear"><option>2010</option><option>2011</option>
+                                            <option>2012</option><option>2013</option>
+                                            <option>2014</option><option>2015</option>
+                                            <option>2016</option><option>2017</option>
+                                            <option>2018</option><option>2019</option>
+                                            <option>2020</option><option>2021</option>
+                                        </select>
+                                    </div><br>
+
+                                   <div class="end"> <h5>Ended at</h5></div>
+                            <select id="endpromonths"name="proendmonth"><option>January</option><option>Febuary</option>
+                                          <option>March</option><option>April</option>
+                                          <option>May</option><option>June</option>
+                                          <option>July</option><option>August</option>
+                                          <option>September</option><option>October</option>
+                                          <option>November</option><option>December</option>
+                                        
+                                        </select>
+                                        <select id="endproyears"name="proendyear"><option>2010</option><option>2011</option>
+                                            <option>2012</option><option>2013</option>
+                                            <option>2014</option><option>2015</option>
+                                            <option>2016</option><option>2017</option>
+                                            <option>2018</option><option>2019</option>
+                                            <option>2020</option><option>2021</option>
+                                          
+                                          </select>
+                                    <br>
+                            <input id="pro-cred" type="text" name="prourl" placeholder="Project URL" required><br>
+                            <div class="prodescription" > <h5>Description</h5></div>
+                            <textarea id="protext-area" rows="4" cols="50" name="prodescription"></textarea><br>
+                            <div class="save" ><input id="save" type="submit"></div>
+                        </form>
+                        </div>
+                </div>
+
+                 <!--Volunteer Experience-->
+                 <div class="volunteer-model">
+                    <div class="volunteer-model-box">
+                        <div class="volclose" onclick="volclosing()">+</div>
+                        <p>Volunteer&nbsp;&nbsp;Experience</p>
+                        <form action="/volunteership" method="post">
+                            <input id="vol-title" type="text" name="voltitle" placeholder="Position title" required ><br>
+                            <input id="volorg-title" type="text" name="volorgtitle" placeholder="Organization name" required><br>
+                            <div class="volend"><h5>From</h5>
+                                <div class="calender"><select id="volmonths" name="volstartmonth"><option>January</option><option>Febuary</option>
+                                    <option>March</option><option>April</option>
+                                    <option>May</option><option>June</option>
+                                    <option>July</option><option>August</option>
+                                    <option>September</option><option>October</option>
+                                    <option>November</option><option>December</option>
+                                </select>
+                                  <select id="volyears"name="volstartyear"><option>2010</option><option>2011</option>
+                                      <option>2012</option><option>2013</option>
+                                      <option>2014</option><option>2015</option>
+                                      <option>2016</option><option>2017</option>
+                                      <option>2018</option><option>2019</option>
+                                      <option>2020</option><option>2021</option>
+                                  </select>
+                              </div><br>
+
+                             <div class="end"> <h5>To</h5></div>
+                      <select id="endvolmonths"name="volendmonth"><option>January</option><option>Febuary</option>
+                                    <option>March</option><option>April</option>
+                                    <option>May</option><option>June</option>
+                                    <option>July</option><option>August</option>
+                                    <option>September</option><option>October</option>
+                                    <option>November</option><option>December</option>
+                                    </select>
+                                    <select id="endvolyears"name="volendyear"><option>2010</option><option>2011</option>
+                                      <option>2012</option><option>2013</option>
+                                      <option>2014</option><option>2015</option>
+                                      <option>2016</option><option>2017</option>
+                                      <option>2018</option><option>2019</option>
+                                      <option>2020</option><option>2021</option>
+                                </select><br>
+                        <textarea id="voltext-area" rows="4" cols="50" name="voldescription">Description</textarea><br>
+                     <div class="save"><button id="linktab2" onclick="voladresstab()">Link</button><input type="submit" class= "save" id="save"></div>
+                     <div id="link2"><input type="text" name="volurl" id="voladdress" placeholder="paste the drive link" required></div>
+                    </form>
+                    </div></div>
+                </div>
+            
+                <!--Contact-->
+                    <div class="contact-model">
+                        <div class="contact-model-box">
+                            <div class="contclose" onclick="contactclosing()">+</div>
+                            <p>Add&nbsp;&nbsp;Contact</p>
+                            <form method="post" action="/contact">
+                                <input id="website-title" type="text" name="website" placeholder="Website" ><br>
+                                <input id="email-title" type="text" name="emailtitle" placeholder="Email" ><br>
+                                <input id="phno-title" type="text" name="phno" placeholder="Phone number" ><br>
+                                <input id="address-title" type="text" name="addresstitle" placeholder="Address" ><br>
+                                <div class="save" ><input type="submit" id="save"></div>
+                            </form>
+                        </div>
+                    </div>
+                </body>
+</html>

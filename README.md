@@ -16,7 +16,7 @@ Now a days more applicatoions are developed for various purposes but to uplift t
 
 - Front End - HTML, CSS, JavaScript 
 - Back End  -  Flask
--   4 `Database  - MongoDB
+- Database  - MongoDB
 
 # 🚀&nbsp;Installation 
 

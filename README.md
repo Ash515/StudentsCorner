@@ -12,7 +12,7 @@ Now a days more applicatoions are developed for various purposes but to uplift t
 - Volunteership details
 - Certifications
 
-# Tech Stacks
+# Tech Stacks 👨‍💻
 
 - Front End - HTML, CSS, JavaScript 
 - Back End  -  Flask

@@ -12,15 +12,15 @@ Now a days more applicatoions are developed for various purposes but to uplift t
 
 # Tech Stacks
 
-📌Front End - HTML, CSS, JavaScript 
-📌Back End  -  Flask
-📌Database  - MongoDB
+- Front End - HTML, CSS, JavaScript 
+- Back End  -  Flask
+-   4 `Database  - MongoDB
 
 # 🚀&nbsp;Installation 
 
 1. Clone the repository 
 ```
-https://github.com/Ash515/.git
+https://github.com/Ash515/Students-Corner.git
 ```
 2. Check the status of your file 
 ```

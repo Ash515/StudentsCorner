@@ -16,10 +16,10 @@ Now a days more applicatoions are developed for various purposes but to uplift t
 - Back End  -  Flask
 - Database  - MongoDB
 
-# Image Results
-<img src="Output Images/op1.png width="400px">   <img src="Output Images/OP2.png width="400px"> 
-<img src="Output Images/OP3.png width="400px">   <img src="Output Images/OP4.png width="400px"> 
-<img src="Output Images/OP5.png width="400px">   <img src="Output Images/OP6.png width="400px"> 
+# Image Results 👓🤩
+<img src="Output Images/op1.png" width="400px">   <img src="Output Images/OP2.png" width="400px"> 
+<img src="Output Images/OP3.png" width="400px">   <img src="Output Images/OP4.png" width="400px"> 
+<img src="Output Images/OP5.png" width="400px">   <img src="Output Images/OP6.png" width="400px"> 
 
 # 🚀&nbsp;Installation 
 

@@ -3,7 +3,7 @@ from bson import ObjectId
 from hashlib import md5
 from wtforms import Form, BooleanField, TextField, PasswordField, validators
 from  pymongo import MongoClient
-from MySQLdb import escape_string as thwart
+
 from flask.wrappers import Response
 import re
 import os  

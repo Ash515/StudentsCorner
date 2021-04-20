@@ -21,7 +21,7 @@ Now a days more applicatoions are developed for various purposes but to uplift t
 <img src="Output Images/OP3.png" width="400px">   <img src="Output Images/OP4.png" width="400px"> 
 <img src="Output Images/OP5.png" width="400px">   <img src="Output Images/OP6.png" width="400px"> 
 
-# 🚀&nbsp;Installation 
+# 🚀&nbsp;Installation 📥 
 
 1. Clone the repository 
 ```

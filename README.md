@@ -54,7 +54,7 @@ Thats all about installation and version control with **Git**
 Feel free to mail me for any doubts/query 
 :email: theyoungtech515@gmail.com
 
-## ❤️ Project Admin
+## ❤️ Project Admin.
 <table>
 	<tr>
 		<td align="center">

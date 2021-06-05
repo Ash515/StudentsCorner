@@ -3,25 +3,25 @@
 One application to store your achivements
 Now a days more applicatoions are developed for various purposes but to uplift the student community the **Students Corner** web portal system helpful to showcase all the academic works, community works, achievements, etc. by the student in their respective profile. 
 
-# Features ❤
+# Features 
 - Education details
 - Project details
 - Expereience details
 - Volunteership details
 - Certifications
 
-# Tech Stacks 👨‍💻
+# Tech Stacks
 
 - Front End - HTML, CSS, JavaScript 
 - Back End  -  Flask
 - Database  - MongoDB
 
-# Image Results 👓🤩
+# Image Results
 <img src="Output Images/op1.png" width="400px">   <img src="Output Images/OP2.png" width="400px"> 
 <img src="Output Images/OP3.png" width="400px">   <img src="Output Images/OP4.png" width="400px"> 
 <img src="Output Images/OP5.png" width="400px">   <img src="Output Images/OP6.png" width="400px"> 
 
-# 🚀&nbsp;Installation 📥 
+# Installation 
 
 1. Clone the repository 
 ```

@@ -13,7 +13,7 @@ Now a days more applicatoions are developed for various purposes but to uplift t
 # Tech Stacks
 
 - Front End - HTML, CSS, JavaScript 
-- Back End  -  Flask
+- Back End  -  Flask,Python
 - Database  - MongoDB
 
 # Image Results

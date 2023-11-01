@@ -1,0 +1,13 @@
+[{
+  "_id": {
+    "$oid": "654256cd6fa02b92f643e2dd"
+  },
+  "username": "212218205005",
+  "password": {
+    "$binary": {
+      "base64": "JDJiJDEyJHFUOXRDTUVYTW1GcUM5SXJSMUprWnVrakdYYXNoN1ZGZDRFSWxEOGlYSnV6ZWo0eEEyS05D",
+      "subType": "00"
+    }
+  },
+  "email": "aaashwin515@gmail.com"
+}]

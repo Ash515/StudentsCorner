@@ -1,0 +1,28 @@
+[{
+  "_id": {
+    "$oid": "654257efc71f6a1c8f90fe63"
+  },
+  "exptitle": "Software Developer ",
+  "comptitle": "Botonomics Automations",
+  "emptitle": "Full Time",
+  "expjoinmonth": "January",
+  "expjoinyear": "2010",
+  "expendmonth": "March",
+  "expendyear": "2018",
+  "expdescription": "Worked as a team captain.",
+  "expdrivelink": "https://www.mongodb.com/products/tools/shell"
+},
+{
+  "_id": {
+    "$oid": "654259d3c71f6a1c8f90fe64"
+  },
+  "exptitle": "Software Developer ",
+  "comptitle": "KloudOne Technologies",
+  "emptitle": "Full Time",
+  "expjoinmonth": "January",
+  "expjoinyear": "2010",
+  "expendmonth": "May",
+  "expendyear": "2011",
+  "expdescription": "Completed",
+  "expdrivelink": "https://www.mongodb.com/products/tools/shell"
+}]

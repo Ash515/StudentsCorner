@@ -1,0 +1,442 @@
+body{
+    background-color: rgba(175, 41, 52, 0.384);}
+.main{
+    
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   color:white;
+   display: inline-block;
+   
+   border-radius: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgba(0, 55, 128, 0.712);
+    
+}
+.education{ 
+   
+    background-color:white;
+    padding-bottom: 250px;
+    display: flex;
+    margin-left: 350px;
+    margin-right: 350px;
+    margin-top: 20px;
+}
+.education h3{
+    margin-left: 20px;
+}
+.experience {
+    display: flex;
+    background-color:white;
+    padding-bottom: 250px;
+    margin-left: 350px;
+    margin-right: 350px;
+
+}
+.experience h3{
+    margin-left: 20px;
+}
+.certification {
+    display: flex;
+    background-color:white;
+    padding-bottom: 250px;
+    margin-left: 350px;
+    margin-right: 350px;
+}
+.certification h3{
+    margin-left: 20px;
+}
+.project {
+    display: flex;
+    background-color:white;
+    padding-bottom: 250px;
+    margin-left: 350px;
+    margin-right: 350px;
+}
+.project h3{
+    margin-left: 20px;
+}
+.volunteer {
+    display: flex;
+    background-color:white;
+    padding-bottom: 300px;
+    margin-left: 350px;
+    margin-right: 350px;
+}
+.volunteer h3{
+    margin-left: 20px;
+}
+.contact {
+    display: flex;
+    background-color:rgba(105, 105, 156, 0.479);
+    
+    margin-left: 350px;
+    margin-right: 350px;
+}
+.contact h3{
+    margin-left: 20px;
+}
+#education-plus{
+    margin-left:650px;
+    cursor: pointer;
+}
+#experience-plus{
+    margin-left:650px;
+    cursor: pointer;
+}
+#certify-plus{
+    margin-top: 0px;
+    margin-left:730px;
+    cursor: pointer;
+}
+#project-plus{
+    margin-left:670px;
+    cursor: pointer;
+}
+#volunteer-plus{
+    margin-left:710px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+#contact-plus{
+    margin-left:650px;
+    cursor: pointer;
+}
+
+
+
+
+.education ul li{
+    display: block;
+       width:720px;
+       height:200px;
+       background-color:rgba(177, 123, 58, 0.527);
+       color:white;
+       margin-right: 10px;
+    
+    }
+.insertedutitle{
+        color:white;
+       
+        display: inline-block;
+        margin: 10px;
+        
+}
+.insertedujoinmonth{
+        font-style: italic;
+        display: inline-block;
+        margin-left:350px;
+        color:white;
+    
+    }
+.insertedujoinyear{
+        font-style: italic;
+        color:white;
+        display: inline-block;
+        margin-right:5px;
+    }
+    
+.inserteduendmonth{
+        font-style: italic;
+        display: inline-block;
+       
+        color:white;
+    }
+.inserteduendyear{
+        font-style: italic;
+        color:white;
+        display: inline-block;
+        margin-right:5px;
+    }
+.inserteduspectitle{
+        margin-left: 10px;
+        display: inline-block;
+    }
+.inserteducollegetitle{
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+.insertcgpaselect{
+        display: inline-block;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+.insertcgpaname{
+        display: inline-block;
+        margin-left: 20px;
+       
+    
+    }
+.delete i{
+  margin-left: 100px;
+}
+
+
+.experience ul li{
+        display: block;
+           width:720px;
+           height:250px;
+           background-color:rgba(137, 98, 201, 0.507);
+           color:white;
+        
+        }
+.insertexptitle{
+        color:white;
+        padding-top: 10px;
+        display: inline-block;
+        margin: 10px; 
+        font-size: 18px;
+    }
+.insertexpjoinmonth{
+        font-style: italic;
+        display: inline-block;
+        margin-left: 300px;
+        color:white;
+    }
+.insertexpjoinyear{
+        font-style: italic;
+        color:white;
+        display: inline-block;
+        margin-right:5px;
+    }
+    
+.insertexpendmonth{
+        font-style: italic;
+        display: inline-block;
+       
+        color:white;
+    }
+.insertexpendyear{
+        font-style: italic;
+        color:white;
+        display: inline-block;
+        margin-right:5px;
+    }
+    
+.insertexpcomptitle{
+        
+        margin-left: 10px;
+        margin-top: 10px;
+        font-style: oblique;
+    }
+.insertexpemptitle{
+        margin-top: 10px;
+        margin-left: 10px;
+        font-style: oblique;
+}
+    
+.insertexpdescription{
+        margin-left: 10px;
+        margin-right: 30px;
+        margin-top: 10px;
+        
+    }
+.insertexpdrivelink{
+        margin-left: 10px;
+        margin-top: 10px;
+        font-size: 17px;
+}
+    
+.experience a{
+    text-decoration: none;
+    color:crimson;
+}
+
+.certification ul li{
+    display: block;
+       width:720px;
+       height:150px;
+       background-color:rgba(141, 112, 73, 0.726);
+       color:white;
+    
+    }
+.insertcerttitle{
+    color:white;
+    padding-top: 10px;
+   
+    margin: 10px; 
+    font-size: 18px;
+}
+.insertcertjoinmonth{
+    font-style: italic;
+   margin-left: 10px;
+    color:white;
+}
+.insertcertjoinyear{
+    font-style: italic;
+    color:white;
+   
+}
+
+.insertcertendmonth{
+    font-style: italic;
+   
+   
+    color:white;
+}
+.insertcertendyear{
+    font-style: italic;
+    color:white;
+ 
+}
+.insertcerturl{
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 17px;
+}
+.insertcertorg{
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 17px;
+}
+.certification a{
+    text-decoration: none;
+    color:maroon;
+}
+.project ul li{
+    display: block;
+       width:720px;
+       height:250px;
+       background-color:rgba(19, 14, 48, 0.726);
+       color:white;
+    
+    }
+.insertprotitle{
+    color:white;
+    padding-top: 10px;
+   
+    margin: 10px;
+    margin-left: 20px; 
+    font-size: 18px;
+}
+.insertprojoinmonth{
+    font-style: italic;
+   margin-left: 20px;
+    color:white;
+}
+.insertprojoinyear{
+    font-style: italic;
+    color:white;
+   
+}
+
+.insertproendmonth{
+    font-style: italic;
+   
+   
+    color:white;
+}
+.insertproendyear{
+    font-style: italic;
+    color:white;
+ 
+}
+.insertprourl{
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 17px;
+}
+.insertprodescription{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    font-size: 17px;
+}
+.project a{
+    text-decoration: none;
+    color:rgb(231, 219, 219);
+}
+
+.volunteer ul li{
+    display: block;
+       width:720px;
+       height:250px;
+       background-color:rgba(63, 172, 112, 0.726);
+       color:white;
+    
+    }
+.insertvoltitle{
+    color:white;
+    padding-top: 10px;
+   
+    margin: 10px;
+    margin-left: 20px; 
+    font-size: 18px;
+}
+.insertvolorgtitle{
+    color:white;
+    padding-top: 10px;
+   
+    margin: 10px;
+    margin-left: 20px; 
+    font-size: 17px;
+}
+.insertvoljoinmonth{
+    font-style: italic;
+   margin-left: 20px;
+    color:white;
+}
+.insertvoljoinyear{
+    font-style: italic;
+    color:white;
+   
+}
+.insertvolendmonth{
+    font-style: italic;
+   
+   
+    color:white;
+}
+.insertvolendyear{
+    font-style: italic;
+    color:white;
+ 
+}
+.insertvolurl{
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 17px;
+}
+.insertvoldescription{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    font-size: 17px;
+}
+.volunteer a{
+    text-decoration: none;
+    color:rgb(112, 36, 36);
+}
+.insertwebtitle{
+    color:white;
+    text-align: center;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.insertemailtitle{
+    color:white;
+    text-align: center;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.insertphno{
+    color:white;
+    text-align: center;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.insertadress{
+    color:white;
+    text-align: center;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.contact ul li{
+    background-color: aqua;
+    display: block;
+    width:720px;
+    height:250px;
+    background-color:rgba(215, 203, 235, 0.89);
+    color:rgba(128, 0, 0, 0.493);
+}
+

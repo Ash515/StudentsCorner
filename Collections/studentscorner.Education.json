@@ -1,0 +1,14 @@
+[{
+  "_id": {
+    "$oid": "6542577bd9b1b51e4774dcd9"
+  },
+  "educationtitle": "Bachelor of Technology",
+  "specializationtitle": "Information Technology",
+  "edujoinmonth": "June",
+  "edujoinyears": "2018",
+  "eduendmonth": "May",
+  "eduendyear": "2021",
+  "collegetitle": "Saveetha Eng College",
+  "cgpaselect": "CGPA",
+  "cgpaname": "8.2"
+}]
